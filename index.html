@@ -1,502 +1,76 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/bootstrap-social.css">
-        <link rel="stylesheet" href="css/main.css">
-		<link href="css/animate.css" rel="stylesheet">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="js/waypoints.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="#">Project name</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-			  <form class="navbar-form navbar-right" role="form">
-				<div class="form-group">
-				  <input type="text" placeholder="Email" class="form-control">
-				</div>
-				<div class="form-group">
-				  <input type="password" placeholder="Password" class="form-control">
-				</div>
-				<button type="submit" class="btn btn-success">Sign in</button>
-			  </form>
-			</div>
-		  </div>
-		</nav>-->
-		<nav class="top-bar" data-spy="affix" data-offset-top="100"></nav>
-		<section class="logo">
-			<nav role="navigation" class="navbar navbar-custom hidden-xs" data-spy="affix" data-offset-top="120">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<img src="img/logo.png" class="hidden-xs visible-sm img-responsive img-logo2" alt=""/>
-					</div>
-					<div class="col-sm-8 text-right">
-						<div class="form-horizontal form-custom">
-							<div class="form-group form-group2">
-								<label for="merchant" class="col-xs-4 control-label"><a href="#">Sign Up</a> / <a href="#">Log In</a></label>
-								<div class="col-xs-5">
-								    <select class="form-control" id="QoList">
-										<option>Choose City</option>
-										<option>Ahmedabad</option>
-										<option>Bhubaneswar</option>
-										<option>Chennai</option>
-										<option>Delhi</option>
-								    </select>
-								</div>
-								<div class="col-xs-3">
-									<span class="fa-stack fa-lg">
-									  <i class="fa fa-square-o fa-stack-2x"></i>
-									  <i class="fa fa-facebook fa-stack-1x"></i>
-									</span>
-									<span class="fa-stack fa-lg">
-									  <i class="fa fa-square-o fa-stack-2x"></i>
-									  <i class="fa fa-twitter fa-stack-1x"></i>
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row logo-row">
-					<div class="logo-div">
-						<img src="img/logo.png" class="hidden-xs hidden-sm img-responsive img-logo" alt=""/>
-					</div>
-				</div>
-			</div>
-			<div class="box-shadow"></div>
-			</nav>
-			
-			<nav role="navigation" class="navbar navbar-custom visible-xs" data-spy="affix" data-offset-top="120">
-			<div class="container">
-				<div class="row">
-					<div class="navbar-header">
-					  <button type="button" class="navbar-toggle" data-toggle="collapse" 
-						 data-target="#example-navbar-collapse">
-						 <span class="sr-only">Toggle navigation</span>
-						 <span class="icon-bar"></span>
-						 <span class="icon-bar"></span>
-						 <span class="icon-bar"></span>
-					  </button>
-					  <a class="navbar-brand" href="#"><img src="img/logo.jpg" class="visible-xs visible-sm img-responsive nav-img" alt=""/></a>
-				   </div>
-					<div class="collapse navbar-collapse" id="example-navbar-collapse">
-						<ul class="nav navbar-nav">
-									<div class="form-horizontal form-custom">
-										<div class="form-group form-group2">
-													<hr>
-													<label for="merchant" class="col-sm-3 col-xs-4 right-pad control-label country-text text-center"><a href="#">Sign Up</a> / <a href="#">Log In</a></label>
-													<div class="col-sm-9 col-xs-8 left-pad">
-														<select class="form-control form-custom2" id="QoList">
-															<option>Choose City</option>
-															<option>Ahmedabad</option>
-															<option>Bhubaneswar</option>
-															<option>Chennai</option>
-															<option>Delhi</option>
-														</select>
-													</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-xs-12 text-center">
-											<h3>Follow Us:
-											<span class="fa-stack fa-lg">
-											  <i class="fa fa-square-o fa-stack-2x"></i>
-											  <i class="fa fa-facebook fa-stack-1x"></i>
-											</span>
-											<span class="fa-stack fa-lg">
-											  <i class="fa fa-square-o fa-stack-2x"></i>
-											  <i class="fa fa-twitter fa-stack-1x"></i>
-											</span>
-											</h3>
-										</div>
-									</div>
-						</ul>
-					</div>
-				</div>
-				<div class="row logo-row">
-					<div class="logo-div">
-						<img src="img/logo.png" class="hidden-xs hidden-sm img-responsive img-logo" alt=""/>
-					</div>
-				</div>
-			</div>
-			<div class="box-shadow"></div>
-			</nav>
-		</section>
-		<section class="banner">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="banner-left wp1">
-							<h2>A simple and fun way to</h2>
-							<h1><strong>BUY & SELL<br/>FASHION</strong></h1>
-							<div class="social-div">
-								<a class="btn btn-block btn-social btn-facebook">
-								  <i class="fa fa-facebook"></i>
-								  Sign up with Facebook
-								</a>
-								<a class="btn btn-block btn-social btn-google">
-								  <i class="fa fa-google-plus"></i>
-								  Sign up with Google
-								</a>
-								<a class="btn btn-block btn-social btn-reddit">
-								  <i class="fa fa-envelope"></i>
-								  Sign up with Email
-								</a>
-							</div>
-							<hr>
-							<div class="text-center">
-								<h4><strong>Already have an account?</strong> <a href="#">LOG IN NOW</a></h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-8">
-						<div class="row banner-row wp2">
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/amazon.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/expedia.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/halfords.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-						</div>
-						<div class="row banner-row wp3">
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/hotels.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/sky.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/aviva.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-						</div>
-						<div class="row banner-row wp2">
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/debenhams.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/m-n-s.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="banner-img">
-									<img src="img/tesco.jpg" class="img-responsive img-cent" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="page-divide">
-			<div class="container">
-				<div class="row">
-					<div class="text-center">
-						<span class="divide-text">Cashback on every purchase local/online</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="shop-pig">
-			<div class="container">
-				<div class="row wp5">
-					<img src="img/shop-pig.jpg" class="img-responsive img-cent"/>
-				</div>
-			</div>
-		</section>
-		<section class="step1">
-			<div class="container">
-				<div class="row">
-					<div class="text-center">
-						<p class="step-header">Online</p>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<a class="btn btn-default btn-circle">1</a>
-						<h2><strong>Search</strong></h2>
-						<h4><strong>Explore offers from over 4,200 retailers</strong></h4>
-					</div>
-					<div class="col-md-4 text-center">
-						<a class="btn btn-default btn-circle">2</a>
-						<h3><strong>Shop</strong></h3>
-						<h4><strong>Click our link and purchase with the retailer</strong></h4>
-					</div>
-					<div class="col-md-4 text-center">
-						<a class="btn btn-default btn-circle">3</a>
-						<h3><strong>Get paid</strong></h3>
-						<h4><strong>We track your purchase and you'll earn a cash reward</strong></h4>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="step2">
-			<div class="container">
-				<div class="row">
-					<div class="text-center">
-						<p class="step-header">Local</p>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<a class="btn btn-default btn-circle">1</a>
-						<h2><strong>Search</strong></h2>
-						<h4><strong>Explore offers from over 4,200 retailers</strong></h4>
-					</div>
-					<div class="col-md-4 text-center">
-						<a class="btn btn-default btn-circle">2</a>
-						<h3><strong>Shop</strong></h3>
-						<h4><strong>Click our link and purchase with the retailer</strong></h4>
-					</div>
-					<div class="col-md-4 text-center">
-						<a class="btn btn-default btn-circle">3</a>
-						<h3><strong>Get paid</strong></h3>
-						<h4><strong>We track your purchase and you'll earn a cash reward</strong></h4>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="page-divide">
-			<div class="container">
-				<div class="row">
-					<div class="text-center">
-						<span class="divide-text">Follow your favourite shop, online / local</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="updated">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="updated-text">
-							<h4><strong>Follow your favourite shops, know latest offers, latest products, trends, etc....</strong></h4>
-							<br />
-							<h4><strong>Follow your favourite shops, know latest offers, latest products, trends, etc....</strong></h4>
-							<br />
-							<h4><strong>Follow your favourite shops, know latest offers, latest products, trends, etc....</strong></h4>
-						</div>
-					</div>
-					<div class="col-md-6 wp12">
-						<img src="https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX10118469.jpg" class="img-responsive img-cent" alt=""/>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="page-divide">
-			<div class="container">
-				<div class="row">
-					<div class="text-center">
-						<span class="divide-text">Showcase your products or sell</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="shop-girl">
-			<div class="container">
-				<div class="row wp14">
-						<img src="img/laptop-girl.jpg" class="img-responsive img-cent"/>
-				</div>
-				<div class="row">
-					<div class="text-center">
-						<h3><strong>Make money from items that are just sitting in your closet.</strong></h3>
-						<h4>List item for sale in less than 60 seconds. Show deals, reach your local users.</h4>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="page-divide">
-			<div class="container">
-				<div class="row">
-					<div class="text-center">
-						<span class="divide-text">Need to know more</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="know-more">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="row">
-							<div class="col-md-4 text-center">
-								<i class="fa fa-eye-slash fa-4x"></i>
-								<h4>It sounds to good to be true, are there any hidden costs?</h4>
-							</div>
-							<div class="col-md-4 text-center">
-								<i class="fa fa-sign-in fa-4x"></i>
-								<h4>It sounds to good to be true, are there any hidden costs?</h4>
-							</div>
-							<div class="col-md-4 text-center">
-								<i class="fa fa-lock fa-4x"></i>
-								<h4>It sounds to good to be true, are there any hidden costs?</h4>
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col-md-4 text-center">
-								<i class="fa fa-money fa-4x"></i>
-								<h4>How much money can I earn?</h4>
-							</div>
-							<div class="col-md-4 text-center">
-								<i class="fa fa-usd fa-4x"></i>
-								<h4>How do I get paid my cashback?</h4>
-							</div>
-							<div class="col-md-4 text-center">
-								<i class="fa fa-lock fa-4x"></i>
-								<h4>Can I save on my supermarket shopping?</h4>
-							</div>
-						</div>
-						<hr>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="map-div">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-8">
-						<div class="map-box">
-							<h1 class="no-pad">Get In Touch</h1>
-							<hr>
-							<h2>Cash Back</h2>
-							<h3>4th Floor,<br/>76-80 Great Eastern Street,<br/>London, EC2A 3JL</h3>
-							<br/>
-							<p><a href="#" class="btn btn-custom btn-lg"><i class="fa fa-skype"></i>  0001 000 000</a></p>
-							<a href="#" class="btn btn-custom btn-lg">info@cashback.com</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9">
-						<div class="row">
-							<div class="col-md-3">
-								<h3>Categories</h3>
-								<p><a href="#">High Street</a></p>
-								<p><a href="#">Entertainment</a></p>
-								<p><a href="#">Fashion</a></p>
-								<p><a href="#">Mobiles</a></p>
-								<p><a href="#">Electricals</a></p>
-								<p><a href="#">Insurance & Finance</a></p>
-								<p><a href="#">Utilities</a></p>
-								<p><a href="#">Travel</a></p>
-								<p><a href="#">Office & Business</a></p>
-								<p><a href="#">Cars</a></p>
-								<p><a href="#">Food & Drinks</a></p>
-							</div>
-							<div class="col-md-3">
-								<h3>Browse</h3>
-								<p><a href="#">Browse all</a></p>
-								<p><a href="#">Browse A-Z</a></p>
-								<p><a href="#">Browse newest</a></p>
-								<p><a href="#">Browse Faster Paying</a></p>
-								<h3>Hot offers</h3>
-								<p><a href="#">Hottest</a></p>
-								<p><a href="#">Top cashback</a></p>
-								<p><a href="#">Top voucher codes</a></p>
-								<p><a href="#">Mobile & In-store</a></p>
-								<p><a href="#">Free cashback</a></p>
-								<p><a href="#">Sales</a></p>
-								<p><a href="#">Hidden gems</a></p>
-							</div>
-							<div class="col-md-3">
-								<h3>Support</h3>
-								<p><a href="#">Contact Support</a></p>
-								<p><a href="#">All help</a></p>
-								<p><a href="#">Accessibility</a></p>
-								<h3>Useful features</h3>
-								<p><a href="#">In-store cashback</a></p>
-								<p><a href="#">ClickSnap</a></p>
-								<p><a href="#">Compare</a></p>
-								<p><a href="#">mobile app</a></p>
-								<p><a href="#">Opinions</a></p>
-								<p><a href="#">Cashback Reminder</a></p>
-								<p><a href="#">on Facebook</a></p>
-								<p><a href="#">on Twitter</a></p>
-								<p><a href="#">Refer</a></p>
-							</div>
-							<div class="col-md-3">
-								<h3>Company</h3>
-								<p><a href="#">About</a></p>
-								<p><a href="#">Business</a></p>
-								<p><a href="#">Contact</a></p>
-								<p><a href="#">Press</a></p>
-								<p><a href="#">In the news</a></p>
-								<p><a href="#">Careers</a></p>
-								<p><a href="#">Site map</a></p>
-								<p><a href="#">Blog</a></p>
-								<h3>Policies</h3>
-								<p><a href="#">Account Holder Agreements</a></p>
-								<p><a href="#">Privacy Policy</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 following-text">
-						<p class="footer-cr">© 2015 CashBack. All rights reserved.</p>
-						<hr>
-						<p><a class="btn-circle2"><i class="fa fa-group"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;4 million members</p>
-						<p><a class="btn-circle2"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;34,046 followers</p>
-						<p><a class="btn-circle2"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;137,172 fans</p>
-						<hr>
-						<a><i class="fa fa-box fa-twitter"></i></a> <a><i class="fa fa-box fa-facebook"></i></a> <a><i class="fa fa-box fa-rss"></i></a> <a><i class="fa fa-box fa-linkedin"></i></a> <a><i class="fa fa-box fa-google-plus"></i></a> <a><i class="fa fa-box fa-youtube"></i></a>
-					</div>
-				</div>
-			</section>
-		</section>
-		<!--scripts-->
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WishLo - Coming Soon!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<!-- CSS start here -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/multi-options.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<link rel='shortcut icon' href='favicon.png' type='image/x-icon'/ >
+<!-- CSS end here -->
+<!-- Google fonts start here -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<!-- Google fonts end here -->
+</head>
+<body class="bg-pattern">
+<!-- Preloader start here -->
+<div id="preloader">
+  <div id="status"><img src="img/logo.png" alt="WishLo - Coming Soon!"></div>
+</div>
+<!-- Preloader end here -->
+<!-- Main container start here -->
+<section class="container main-wrapper">
+<!-- Logo start here -->
+  <section id="logo" class="fade-down">
+    <a href="#" title="WishLo - Coming Soon!"><img src="img/logo.png" alt="WishLo - Coming Soon!"></a>
+  </section>
+<!-- Logo end here -->
+<!-- Slogan start here -->
+  <section class="slogan fade-down">
+    <img src="img/img-slogan.png" alt="WishLo- Coming Soon!">
+    <p>WishLo is working hard to launch a new site that's going to revolutionize the way <br> you do shopping.</p>
+  </section>
+<!-- Slogan end here -->
+<!-- Social icons start here -->
+<ul class="connect-us row fade-down">
+  <li><a href="https://www.facebook.com/pg/WishLo-1910958162449708" target="_blank" class="fb"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="https://twitter.com/wishloapp" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="https://plus.google.com/u/0/103592142004107955633" target="_blank" class="gplus"><i class="fa fa-google-plus"></i></a></li>
+ <!-- <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+  <li><a href="#" class="ytube"><i class="fa fa-youtube-play"></i></a></li>
+  <li><a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
+  <li><a href="#" class="pinterest"><i class="fa fa-pinterest-square"></i></a></li>-->
+</ul>
+<!-- Social icons end here -->
+<!-- Footer start here -->
+<footer class="fade-down">
+  <p>&copy; 2017. WishLo Inc.</p>
+</footer>
+<!-- Footer end here -->
+</section>
+<!-- Main container start here -->
+<!-- Javascript framework and plugins start here -->
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/modernizr.js"></script> 
+<script type="text/javascript" src="js/appear.js"></script> 
+<script type="text/javascript">
+    $(window).load(function() {
+      $('#status').fadeOut();
+      $('#preloader').delay(350).fadeOut('slow');
+      $('body').delay(350).css({'overflow':'visible'});
+    })
+</script> 
+<script src="js/jquery.knob.js"></script>
+<script src="js/jquery.ccountdown.js"></script>
+<script src="js/init.js"></script>
+<script src="js/general.js"></script>
+<!-- Javascript framework and plugins end here -->
+</body>
 </html>
