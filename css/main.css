@@ -1,0 +1,93 @@
+html, body {width: 100%;height:100%;padding:0px;margin:0px;}
+.btn-circle {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 2em;
+  line-height: 1.5em;
+  border-radius: 50%;
+  background-color:#4c8dc5;
+  color: #FFF;
+}
+.btn-circle2 {
+	padding: 5px 10px;
+    display: inline-block;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    -moz-box-shadow: 0px 0px 2px #888;
+    -webkit-box-shadow: 0px 0px 2px #888;
+    box-shadow: 0px 0px 2px #888;
+	background-color:#FFF;
+	color:#3E3E3E !important;
+}
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wp10, .wp11, .wp12, .wp13, .wp14, .wp15, .wp16 { visibility: hidden; }
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+.img-logo{position:absolute; top: -30px; height:60px;width:219px;}
+.img-logo2{height:30px;width:110px;margin-top:10px;}
+.country-text{font-size: 10px;margin-top:10px;}
+.navbar-brand{padding:5px 15px;}
+.country-text a{font-size: 10px;}
+.right-pad{padding-right:0px;}
+.left-pad{padding-left:0px;}
+.icon-bar{background-color:#000;}
+.top-bar{background-color:#000;height:0.25em;}
+.form-custom{padding-top:5px;}
+.form-custom2{width:90%;}
+.box-shadow{background-image: url(../img/shadow.jpg);background-position:0 0;background-repeat: repeat-x;min-height:11px;}
+.banner-img {padding: 10px;border:1px solid #ccc;}
+.banner-row{padding: 10px 0px 10px 0px;}
+.page-divide{background-color: #4c8dc5;padding: 1em 0px; margin: 1.75em 0px;}
+.banner-left{margin-top: 80px;}
+.banner-right{margin-top: 50px;}
+.social-div{padding: 0px 30px;margin-top: 50px;}
+.btn-social{margin: 20px 0px;padding-top: 15px; padding-bottom: 15px; padding-left: 70px;}
+.btn-social>:first-child {line-height: 54px; width:48px;}
+.divide-text {font-size: 2.5em;color: #FFF;}
+p.step-header{font-size: 2.75em;color:#4c8dc5;}
+.img-cent{margin: 0 auto;}
+.step1, .step2 {margin-top: 40px;}
+.updated-text{margin-top: 50px;}
+.shop-girl{padding-top: 30px; padding-bottom: 30px;}
+.navbar-custom.affix{width:100%;background-color: #FFF;z-index:9999999;animation: affixFadeIn 0.5s  ease-in;-webkit-animation: affixFadeIn 0.5s;-moz-animation: affixFadeIn 0.5s;}
+.top-bar.affix{position:static; height: 0px;}
+.map-div{background-image: url(https://blogbysid.files.wordpress.com/2013/09/gray-google-map.jpg); background-position:center center; background-size:cover;min-height: 300px;}
+.map-box{background-color:#FFF;padding:1.5em;margin-top:1.5em;margin-bottom:1.75em;}
+h1.no-pad{padding:0px;margin:0px;}
+.map-box h2{color:#FD9706;}
+.map-box a{color:#FFF; text-decoration: none;}
+.map-box a:hover{color:#FFF; text-decoration: none;}
+.map-box .fa{color:#1089C1;}
+.btn-custom{background-color:#FD9706;border-radius:0px;}
+.know-more{margin: 30px 0px;}
+.footer{background-color:#3E3E3E;color:#CCC;padding: 20px 0px;}
+.footer a{color: #CCC;}
+.footer hr{margin: 30px;}
+.footer-cr{margin-top:20px;}
+.following-text{color:#FFF;}
+.fa-box{padding:10px; background-color:#CCC;color:#3E3E3E !important;}
+.nav-img{width:100px;height:27px;margin-top:5px;}
+@keyframes affixFadeIn
+{
+from {opacity: 0.75;}
+to {opacity: 1;}
+}
+
+@-webkit-keyframes affixFadeIn 
+{
+from {opacity: 0.75;}
+to {opacity: 1;}
+}
+
+@-moz-keyframes affixFadeIn
+{
+from {opacity: 0.75;}
+to {opacity: 1;}
+}
+.form-group2{margin-bottom:0px;}
+.logo-row{position:relative;}
+.logo-div{width:auto;}
+
